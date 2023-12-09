@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 .grid {
     display: grid;
@@ -18,15 +20,17 @@ body {
 
 main {
     background-color: rgb(255,255,230);
-
+    max-height: 1000px;
+    width: 100%;
 
 }
 
 header {
     background: url(kepek/fejlec.jpg) no-repeat;
     width: 100%;
-    height: 750px;
-    background-position: center;
+    height: 550px;
+    min-height: 300px;
+    background-position: top;
     opacity: 0.8;
 }
 
@@ -40,6 +44,14 @@ article{
     padding: 10px;
     text-align: justify;
 
+}
+article div {
+    font-size: 10px;
+}
+article div h1 {
+    color: #ff1a1a;
+    font-size: 15px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 .article img {
     float: right;
@@ -61,7 +73,7 @@ nav ul {
 }
 
 nav li {
-    
+    text-align: center;
     list-style-type: none;
     font-weight: bold;
     padding: 5px;
